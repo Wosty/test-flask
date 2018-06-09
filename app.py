@@ -7,6 +7,7 @@ import model
 # Load in data structures
 with open("data/wordList.txt", "rb") as fp:
     wordList = pickle.load(fp)
+    wordList = list(wordList)
 wordList.append('<pad>')
 wordList.append('<EOS>')
 
